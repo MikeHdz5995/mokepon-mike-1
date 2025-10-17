@@ -74,6 +74,8 @@ class Mokepon {
         this.y = aleatorio(0, mapa.height - this.alto)
         this.mapaFoto = new Image()
         this.mapaFoto.src = fotoMapa
+        this.mapaFoto.width = 100
+        this.mapaFoto.height = 100
         this.velocidadX = 0
         this.velocidadY = 0
     }
