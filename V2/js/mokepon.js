@@ -95,11 +95,11 @@ let charmander = new Mokepon('Charmander', './assets/Charmander.png', 5, './asse
 
 let squirtle = new Mokepon('Squirtle', './assets/Squirtle2.png', 5, './assets/SquirtleGo.png')
 
-let totodile = new Mokepon('Totodile', './assets/Totodile.png', 5)
+let totodile = new Mokepon('Totodile', './assets/Totodile.png', 5, './assets/Totodile.png')
 
-let piplup = new Mokepon('Piplup', './assets/Piplup.png', 5)
+let piplup = new Mokepon('Piplup', './assets/Piplup.png', 5, './assets/Piplup.png')
 
-let oshawott = new Mokepon('Oshawott', './assets/Oshawott1.png', 5)
+let oshawott = new Mokepon('Oshawott', './assets/Oshawott1.png', 5, './assets/Oshawott1.png')
 
 let bulbasaurEnemigo = new Mokepon('Bulbasaur', './assets/Bulbasaur.png', 5, './assets/Bulbasaur2.png')
 
@@ -107,11 +107,11 @@ let charmanderEnemigo = new Mokepon('Charmander', './assets/Charmander.png', 5, 
 
 let squirtleEnemigo = new Mokepon('Squirtle', './assets/Squirtle2.png', 5, './assets/SquirtleGo.png')
 
-let totodileEnemigo = new Mokepon('Totodile', './assets/Totodile.png', 5)
+let totodileEnemigo = new Mokepon('Totodile', './assets/Totodile.png', 5, './assets/Totodile.png')
 
-let piplupEnemigo = new Mokepon('Piplup', './assets/Piplup.png', 5)
+let piplupEnemigo = new Mokepon('Piplup', './assets/Piplup.png', 5, './assets/Piplup.png')
 
-let oshawottEnemigo = new Mokepon('Oshawott', './assets/Oshawott1.png', 5)
+let oshawottEnemigo = new Mokepon('Oshawott', './assets/Oshawott1.png', 5, './assets/Oshawott1.png')
 
 bulbasaur.ataques.push(
     { nombre: '🌱', id: 'boton-tierra'},
@@ -518,7 +518,7 @@ function obtenerMascota() {
     }
 }
 
-function revisarColision() {
+function revisarColision(enemigo) {
     const arribaEnemigo = enemigo.y
     const abajoEnemigo = enemigo.y + enemigo.alto
     const derechaEnemigo = enemigo.x + enemigo.ancho
